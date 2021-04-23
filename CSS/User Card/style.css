@@ -1,0 +1,67 @@
+* {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.container {
+    width: 1000px;
+    /* height: 500px; */
+    background-color: blanchedalmond;
+    margin: auto;
+}
+
+.topnav {
+    background-color: cornflowerblue;
+    height: 100px;
+}
+
+.profile {
+    width: 90px;
+    /* height: auto; */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 10px grey;
+    position: relative;
+    top: -80px;
+    left: 30px;
+}
+
+.main {
+    background-color: khaki;
+    height: 250px;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+    
+    /* margin-top: -110px; */
+}
+
+
+.content {
+    margin-top: -90px;
+}
+
+.location {
+    width: 14px;
+    margin-right: 10px;
+
+}
+
+p {
+    margin-top: -10px;
+}
+
+.gear {
+    width: 25px;
+    margin-right: 10px;
+}
+
+a {
+    line-height: 25px;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    
+}

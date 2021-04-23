@@ -1,0 +1,119 @@
+.container {
+    background-color: lavender;
+}
+
+.navbar {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    background-color: black;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0px 150px;
+    align-items: center;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+    color: white;
+    }
+
+.menu {
+    display: flex;
+}
+
+.navleft li {
+    list-style-type: none;
+    padding-right: 30px;
+
+}
+
+.navright {
+
+}
+
+.navright button {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.main {
+    background-color: aqua;
+    height: 900px;
+    padding: 150px;
+    /* display: flex; */
+}
+
+.profile {
+    background-color: brown;
+    width: 500px;
+    height: 800px;
+    /* padding: 20px; */
+}
+
+.userInfo {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.topbanner {
+    background-color: cornflowerblue;
+    height: 100px;
+}
+
+.userIcon {
+    width: 70px;
+    /* height: auto; */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 10px grey;
+    position: relative;
+    top: -50px;
+    left: 30px;
+}
+
+.content {
+    margin-top: -80px;
+    margin-left: 30px;
+}
+
+.location {
+    width: 14px;
+    margin-right: 10px;
+
+}
+
+p {
+    margin-top: -10px;
+}
+
+.gear {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+a {
+    line-height: 25px;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    
+}
+
+.userEducation {
+    background-color: purple;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+}

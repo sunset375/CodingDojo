@@ -1,0 +1,33 @@
+.buttons {
+    margin: 30px;
+}
+
+#button1 {
+    background-color: white;
+    color: darkturquoise;
+    width: 100px;
+    border: 1px solid darkturquoise;
+    border-radius: 10px;
+
+}
+
+
+#button2 {
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    margin: 10px;
+
+}
+
+
+#button3 {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+}

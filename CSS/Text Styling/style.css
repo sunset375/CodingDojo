@@ -1,0 +1,39 @@
+* {
+    font-family: 'Balsamiq Sans', cursive;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+
+}
+
+
+.header {
+    background-color: black;
+}
+
+.color_white {
+    color: white;
+}
+
+.color_cyan {
+    color: cyan;
+}
+
+.main {
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-style: italic;
+    margin: 5px 0;
+
+}
+
+.contact {
+    background-color: skyblue;
+    text-align: right;
+    text-decoration: underline;
+    padding-right: 20px;
+}
