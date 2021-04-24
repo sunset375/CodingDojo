@@ -34,10 +34,12 @@ while(start < end) {
 
 function reverse(array) {
     var newarray = [];
-    for{var i = array.length - 1; i >=0; i--
-        }
+    for (var i = array.length - 1; i >=0; i--) {
+        newarray.push(array[i])
     }
+    return newarray
 }
+
 
 var result1 = reverse["a", "b", "c", "d", "e"];
 
@@ -45,6 +47,7 @@ var result1 = reverse["a", "b", "c", "d", "e"];
 //////////////////////////////
 
 function reverse(arr){
+    // var temp = ''
     for (var i=0; i < arr.length/2; i++) {
         var temp = arr[i];
         arr[i] = arr[arr.length-1-i];
@@ -54,3 +57,19 @@ function reverse(arr){
 }
 
 reverse([1,2,3,4,5])
+
+
+//////////////////////////////////////////////
+
+function reversarr(arr) {
+    var i = 0;
+    while (1 < arr.length/2) {
+        var temp = arr[i];
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = temp;
+        i++;
+    }
+    return arr
+}
+
+console.log(reversarr(["a", "b", "c", "d", "e"]))
