@@ -1,0 +1,14 @@
+.header {
+    display: inline-block;
+    transform: rotate(180deg);
+    /* position: absolute; */
+    color: indianred;
+    font-weight: bolder;
+}
+
+
+.print {
+    background-color: azure;
+    border: 2px solid black;
+    color: blueviolet;
+}
