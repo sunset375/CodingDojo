@@ -1,0 +1,146 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    background-color: white;
+}
+
+#navbar {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 8px solid rebeccapurple;
+}
+
+#navbar h1 {
+    color: white;
+}
+
+.textpurple {
+    color: rebeccapurple;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 200px;
+}
+
+.cart select {
+    height: 25px;
+    margin-right: 20px;
+}
+
+.cart p {
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+#scroll {
+    height: 350px;
+    width: 1080px;
+    margin: auto;
+    /* background-color: aquamarine; */
+
+}
+
+#scroll h3 {
+    margin-top: 10px;
+}
+
+.scrollbox {
+    display: flex;
+    align-items: center;
+}
+
+#scrollImage {
+    width: 900px;
+    margin: 0px 20px;
+}
+
+.right {
+    transform: scaleX(-1);
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.boxes {
+    width: 100px;
+    height: 10px;
+    background-color: grey;
+    margin: 20px;
+}
+
+.purple {
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+}
+
+#products {
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.game {
+    width: 290px;
+    background-color: white;
+    margin: 10px;
+}
+
+.gameImg {
+    width: 290px;
+}
+
+.os {
+    width: 30px;
+}
+
+.game h4 {
+    margin: 5px 0px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 5px 5px 5px;
+}
+
+.buttons button {
+    padding: 15px 20px;
+    /* line-height: 40px; */
+}
+
+.green {
+    background-color: #3cb732;
+    border: none;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+    margin: 0;
+    
+}
+
+.oldPrice {
+    color: grey;
+    text-decoration: line-through;
+    margin: 0;
+    font-size: small;
+    text-align: center;
+}
