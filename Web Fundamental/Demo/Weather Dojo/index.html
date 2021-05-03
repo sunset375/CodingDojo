@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Weather Dojo</title>
+</head>
+<body>
+    <div class="head">
+        <h1 class="title">Dojo weather</h1>
+
+        <ul class="navOption">
+            <li onclick="alert('Loading weather report...')">Burbank</li>
+            <li onclick="alert('Loading weather report...')">Chicago</li>
+            <li onclick="alert('Loading weather report...')">Dallas</li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <div class="contentTitle">
+            <h1 class="contentTitleLeft">San Jose</h1>
+            <div class="contentTitleRight">
+                <p>show temperature in </p>
+                <form>
+                    <select name="" id="conversion">
+                        <option value="C">C</option>
+                        <option value="F">F</option>                    
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="contentMain">
+            <div class="weather">
+                <h1>Today</h1>
+                <img src="imgs/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="temperature">
+                    <p id="temp" class="tempHigh">23.9</p>
+                    <p id="temp" class="tempLow">18.3</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h1>Today</h1>
+                <img src="imgs/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="temperature">
+                    <p id="temp" class="tempHigh">23.9</p>
+                    <p id="temp" class="tempLow">18.3</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h1>Today</h1>
+                <img src="imgs/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="temperature">
+                    <p id="temp" class="tempHigh">23.9</p>
+                    <p id="temp" class="tempLow">18.3</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h1>Today</h1>
+                <img src="imgs/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="temperature">
+                    <p id="temp" class="tempHigh">23.9</p>
+                    <p id="temp" class="tempLow">18.3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookiePop">
+        <img src="imgs/cookie.png" alt="cookie">
+        <div class="cookieContent">
+            <h1>Stop! Cookie Time</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quasi magnam vitae ab libero, neque exercitationem reiciendis, voluptatibus obcaecati similique nihil laborum facere recusandae rerum accusantium nobis eaque reprehenderit suscipit?</p>
+        </div>
+        <div class="cookieButton">
+            <button id="cookiebtn" onclick="removecookie()">I Accept</button>
+        </div>
+    </div>
+
+    <script>
+        // var cookiePop = document.querySelector('.cookiePop')
+        // var cookiebtn = document.querySelector('#cookiebtn')
+
+        // cookiebtn.addEventListener('click', function() {
+        //     cookiePop.remove()
+        // })
+
+
+        function removecookie() {
+            var cookiePop = document.querySelector('.cookiePop');
+            cookiePop.remove();
+        }
+    </script>
+</body>
+</html>
