@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a Dog to a Friend</h1>
+        <form action="/create_dog" method="POST">
+            <p>Name: <input type="text" name="name"></p>
+            <p>Description: <textarea name="desc"></textarea>
+            <p>Owner:
+                <select name="friend_id">
+                    {% for friend in all_friends %}
+                    <option value="{{ friend['id'] }}">{{ friend['first_name'] }} {{ friend['last_name'] }}</option>
+                    {% endfor %}
+                </select>
+            </p>
+            <input class="btn btn-success" type="submit" value="Add Dog">
+        </form>
+    </div>
+
+</body>
+</html>

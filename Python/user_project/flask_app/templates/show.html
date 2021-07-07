@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Show page</h1>
+    <p>First Name: {{user[0]["first_name"]}}</p>
+    <p>Last Name: {{user[0]["last_name"]}}</p>
+    <p>Occupation: {{user[0]["handle"]}}</p>
+    <p>Birthday: {{user[0]["birthday"]}}</p>
+    <p>Actions: 
+    <a class="btn btn-danger mr-3" href="/delete/{{user['id']}}">Delete</a>
+    <a class="btn btn-warning mr-3" href="/edit/{{user['id']}}">Edit Friend</a>
+    <a class="btn btn-primary mr-3" href="/">Go Home</a></p>
+
+</body>
+</html>

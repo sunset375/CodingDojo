@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <a href="/logout" class="btn btn-danger float-right mt-2">Logout</a>
+        <a href="/dashboard" class="btn btn-warning float-right mt-2 mr-2">Dashboard</a>
+        <h1>Show Page</h1>
+        <h1>{{pie.pie_name}} By {{pie.first_name}} </h1>
+
+        <h2>{{pie.filling}} with a {{pie.crust}}</h2>
+
+        <h3>Case a Vote: {{pie.vote}}</h3>
+
+        <form action="/voteup/{{pie.id}}" method="POST">
+            <input type="hidden" name="voteup" value="{{pie.vote}}">  
+            <input type="submit" class="btn btn-info"  value="Delicious">
+        </form>
+    </div>
+
+
+</body>
+</html>

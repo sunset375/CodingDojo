@@ -1,0 +1,28 @@
+USE dojos_and_ninjas;
+INSERT INTO dojos (name, created_at, updated_at)
+VALUE ('Seattle', NOW(), NOW());
+
+USE dojos_and_ninjas;
+INSERT INTO dojos (name, created_at, updated_at)
+VALUE ('Dallas', NOW(), NOW());
+
+USE dojos_and_ninjas;
+INSERT INTO dojos (name, created_at, updated_at)
+VALUE ('Chicago', NOW(), NOW());
+
+USE dojos_and_ninjas;
+INSERT INTO dojos (name, created_at, updated_at)
+VALUE ('Arlington', NOW(), NOW());
+
+USE dojos_and_ninjas;
+INSERT INTO dojos (name, created_at, updated_at)
+VALUE ('Boston', NOW(), NOW());
+
+USE dojos_and_ninjas;
+INSERT INTO dojos (name, created_at, updated_at)
+VALUE ('San Francisco', NOW(), NOW());
+
+
+USE dojos_and_ninjas;
+INSERT INTO ninjas (first_name, last_name, age, dojo_id, created_at, updated_at)
+VALUE ('Wayne', 'Rooney', 39, 1, NOW(), NOW());

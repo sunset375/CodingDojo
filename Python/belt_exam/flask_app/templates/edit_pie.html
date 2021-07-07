@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <a href="/logout" class="btn btn-danger float-right mt-2">Logout</a>
+        <a href="/dashboard" class="btn btn-warning float-right mt-2 mr-2">Dashboard</a>
+
+        <h1>Edit <span>{{pie.pie_name}}</span></h1>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="text-danger">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="/update_pie/{{pie.id}}" method="POST">
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" class="form-control" name="pie_name" value="{{pie.pie_name}}">
+        </div>
+        <div class="form-group">
+            <label>Filling:</label>
+            <input type="text" class="form-control" name="filling" value="{{pie.filling}}">
+        </div>
+        <div class="form-group">
+            <label>Crust:</label>
+            <input type="text" class="form-control" name="crust" value="{{pie.crust}}">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Edit">
+        </form>
+    </div>
+</body>
+</html>
